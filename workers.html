@@ -69,6 +69,11 @@
       text-align: center;
       padding: 15px;
       transition: transform 0.3s, box-shadow 0.3s;
+      
+      min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
     }
     .worker-card:hover {
       transform: translateY(-5px);
@@ -87,14 +92,41 @@
       color: #b8860b;
     }
 
-    /* Админ */
-    .admin-card {
-      background: #fff;
-      border-radius: 20px;
-      padding: 25px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-      text-align: center;
-    }
+   /* Админ */
+.admin-card {
+  display: block; /* чтобы <a> вела себя как карточка */
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.admin-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.admin-card h2 {
+  margin: 10px 0 5px;
+  font-size: 22px;
+  color: #d4af37;
+}
+
+.admin-card p {
+  font-size: 16px;
+  color: #555;
+}
+
     .admin-card img {
       width: 180px;
       height: 180px;
@@ -132,62 +164,74 @@
   </header>
 
   <main>
-    <div class="workers-grid">
-      <div class="worker-card">
-        <img src="images/worker1.jpg" alt="Работник 1">
-        <h3>Алина</h3>
-      </div>
-      <div class="worker-card">
-        <img src="images/worker2.jpg" alt="Работник 2">
-        <h3>Зухра</h3>
-      </div>
-      <div class="worker-card">
-        <img src="images/worker3.jpg" alt="Работник 3">
-        <h3>Мария</h3>
-      </div>
-      <div class="worker-card">
-        <img src="images/worker4.jpg" alt="Работник 4">
-        <h3>София</h3>
-      </div>
-      <div class="worker-card">
-        <img src="images/worker5.jpg" alt="Работник 5">
-        <h3>Наталья</h3>
-      </div>
-      <div class="worker-card">
-        <img src="images/worker6.jpg" alt="Работник 6">
-        <h3>Елена</h3>
-      </div>
-      <div class="worker-card">
-        <img src="images/worker7.jpg" alt="Работник 7">
-        <h3>Диана</h3>
-      </div>
-      <div class="worker-card">
-        <img src="images/worker8.jpg" alt="Работник 8">
-        <h3>Айша</h3>
-      </div>
-      <div class="worker-card">
-        <img src="images/worker9.jpg" alt="Работник 9">
-        <h3>Фатима</h3>
-      </div>
-      <div class="worker-card">
-        <img src="images/worker10.jpg" alt="Работник 10">
-        <h3>Ирина</h3>
-      </div>
-      <div class="worker-card">
-        <img src="images/worker11.jpg" alt="Работник 11">
-        <h3>Жанна</h3>
-      </div>
-      <div class="worker-card">
-        <img src="images/worker12.jpg" alt="Работник 12">
-        <h3>Лилия</h3>
-      </div>
-    </div>
+  <div class="workers-grid">
+  <a href="worker-alina.html" class="worker-card" style="text-decoration:none; color:inherit;">
+    <img src="images/worker1.jpg" alt="Алина">
+    <h3>Алина</h3>
+  </a>
 
-    <div class="admin-card">
-      <img src="images/admin.jpg" alt="Администратор">
-      <h2>Администратор: Камилла</h2>
-      <p>Координирует работу салона, встречает клиентов, отвечает за комфорт и организацию всех процессов.</p>
-    </div>
+  <a href="worker-zuhra.html" class="worker-card" style="text-decoration:none; color:inherit;">
+    <img src="images/worker2.jpg" alt="Зухра">
+    <h3>Зухра</h3>
+  </a>
+
+  <a href="worker-maria.html" class="worker-card" style="text-decoration:none; color:inherit;">
+    <img src="images/worker3.jpg" alt="Мария">
+    <h3>Мария</h3>
+  </a>
+
+  <a href="worker-sofia.html" class="worker-card" style="text-decoration:none; color:inherit;">
+    <img src="images/worker4.jpg" alt="София">
+    <h3>София</h3>
+  </a>
+
+  <a href="worker-natalya.html" class="worker-card" style="text-decoration:none; color:inherit;">
+    <img src="images/worker5.jpg" alt="Наталья">
+    <h3>Наталья</h3>
+  </a>
+
+  <a href="worker-elena.html" class="worker-card" style="text-decoration:none; color:inherit;">
+    <img src="images/worker6.jpg" alt="Елена">
+    <h3>Елена</h3>
+  </a>
+
+  <a href="worker-diana.html" class="worker-card" style="text-decoration:none; color:inherit;">
+    <img src="images/worker7.jpg" alt="Диана">
+    <h3>Диана</h3>
+  </a>
+
+  <a href="worker-ayesha.html" class="worker-card" style="text-decoration:none; color:inherit;">
+    <img src="images/worker8.jpg" alt="Айша">
+    <h3>Айша</h3>
+  </a>
+
+  <a href="worker-fatima.html" class="worker-card" style="text-decoration:none; color:inherit;">
+    <img src="images/worker9.jpg" alt="Фатима">
+    <h3>Фатима</h3>
+  </a>
+
+  <a href="worker-irina.html" class="worker-card" style="text-decoration:none; color:inherit;">
+    <img src="images/worker10.jpg" alt="Ирина">
+    <h3>Ирина</h3>
+  </a>
+
+  <a href="worker-zhanna.html" class="worker-card" style="text-decoration:none; color:inherit;">
+    <img src="images/worker11.jpg" alt="Жанна">
+    <h3>Жанна</h3>
+  </a>
+
+  <a href="worker-liliya.html" class="worker-card" style="text-decoration:none; color:inherit;">
+    <img src="images/worker12.jpg" alt="Лилия">
+    <h3>Лилия</h3>
+  </a>
+</div>
+
+   <a href="admin.html" class="admin-card" style="text-decoration:none; color:inherit;">
+  <img src="images/admin.jpg" alt="Администратор">
+  <h2>Администратор: Камилла</h2>
+  <p>Координирует работу салона, встречает клиентов, отвечает за комфорт и организацию всех процессов.</p>
+</a>
+
   </main>
 </body>
 </html>

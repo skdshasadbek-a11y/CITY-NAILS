@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Диана - City Nails by Zuhra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #fce9f1, #fff);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #fff, #ffe4ec);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-family: "Cinzel", serif;
+      font-size: 26px;
+      background: linear-gradient(90deg, #d4af37, #b8860b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+    }
+
+    .back-btn {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      background: #d4af37;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      background: #b8860b;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* Фото */
+    .photo-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .photo-card img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    /* Инфо */
+    .info-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .info-card h2 {
+      margin: 10px 0;
+      color: #b8860b;
+    }
+    .info-card p {
+      margin: 6px 0;
+      font-size: 16px;
+    }
+
+    /* Работы */
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .work-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .work-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .work-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    .work-card h3 {
+      font-size: 16px;
+      color: #b8860b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="workers.html" class="back-btn">⬅ Назад</a>
+    <h1>Профиль работника</h1>
+  </header>
+
+  <main>
+    <!-- Фото -->
+    <div class="photo-card">
+      <img src="images/worker7.jpg" alt="Диана">
+    </div>
+
+    <!-- Инфо -->
+    <div class="info-card">
+      <h2>Диана</h2>
+      <p>📞 Телефон: +998 91 234 56 78</p>
+      <p>💼 Специализация: Маникюр, педикюр, nail-art</p>
+      <p>✨ Опыт работы: 4 года</p>
+    </div>
+
+    <!-- Работы -->
+    <div class="works-grid">
+      <div class="work-card">
+        <img src="images/work31.jpg" alt="Пример работы 1">
+        <h3>Френч-маникюр</h3>
+      </div>
+      <div class="work-card">
+        <img src="images/work32.jpg" alt="Пример работы 2">
+        <h3>Дизайн с блёстками</h3>
+      </div>
+      <div class="work-card">
+        <img src="images/work33.jpg" alt="Пример работы 3">
+        <h3>Педикюр с узором</h3>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
